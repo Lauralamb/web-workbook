@@ -1,0 +1,66 @@
+body {
+    background-color: grey;
+    text-align: center;
+    font-family: "Oxygen Mono", monospace;
+   
+  }
+  section {
+    font-size: 14px;
+  }
+  .contactinfo {
+    /* text-align: center; */
+    background-color: rgb(42, 63, 63);
+     margin: auto;
+    width:100%;
+    display: inline-block;
+    color: rgb(5, 115, 134);
+    font-weight:bold;
+  }
+  .content{
+    color:rgb(92, 51, 138)
+  }
+  img {
+    width:20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .selfie{
+  margin-top: 30px; 
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 25px;
+  }
+  
+  ul {
+    list-style: none;
+    
+  
+  /* ul needed to remove dots */
+  }
+  nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1{
+    font-size: 50px;
+    color:rgb(92, 51, 138);
+    font-family: "Oxygen Mono", monospace;
+  }
+  h2 {
+    color: rgb(5, 115, 134);
+    font-size: 30px;
+    font-family: "Oxygen Mono", monospace;
+  }
+  
+  nav {
+    border: plum solid 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+  }
+  footer {
+    padding: 10px;
+  }
