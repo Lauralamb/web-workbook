@@ -2,15 +2,13 @@ body {
     background-color: grey;
     text-align: center;
     font-family: "Oxygen Mono", monospace;
-   
   }
-  section {
-    font-size: 14px;
+  .name {
+    background-color:#ccc;
   }
   .contactinfo {
-    /* text-align: center; */
     background-color: rgb(42, 63, 63);
-     margin: auto;
+    margin: auto;
     width:100%;
     display: inline-block;
     color: rgb(5, 115, 134);
@@ -19,10 +17,19 @@ body {
   .content{
     color:rgb(92, 51, 138)
   }
+  description {
+    font-size: 14px;
+  }
   img {
     width:20px;
     height: 20px;
     padding: 5px;
+  }
+  #social{
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    display:inline-block;
   }
   .selfie{
   margin-top: 30px; 
@@ -34,9 +41,6 @@ body {
   
   ul {
     list-style: none;
-    
-  
-  /* ul needed to remove dots */
   }
   
   nav {
@@ -48,12 +52,10 @@ body {
   h1{
     font-size: 50px;
     color:rgb(92, 51, 138);
-    font-family: "Oxygen Mono", monospace;
   }
   h2 {
     color: rgb(5, 115, 134);
     font-size: 30px;
-    font-family: "Oxygen Mono", monospace;
   }
   
   nav {
