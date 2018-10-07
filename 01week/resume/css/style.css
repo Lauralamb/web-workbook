@@ -23,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    
+    box-shadow: 5px 10px 5px 10px rgb(48, 48, 48,0.3);
   }
     .image {
     display: inline-block;
@@ -43,11 +43,11 @@
     padding: 5px;
   }
   .selfie{
-  margin-left:100px; 
-  width: 150px;
-  height: 150px;
-  padding: 20px;
-  border-radius: 50%;
+    margin-left:100px; 
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%;
   }
   ul {
     display: inline-block;
@@ -75,6 +75,7 @@
   }
   nav {
     border: plum solid 10px;
+    background-color: rgb(2, 2, 2, 0.7);
     margin-left: 20%;
     margin-right: 20%;
     font-size: 25px;
