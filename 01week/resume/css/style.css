@@ -104,7 +104,7 @@
     background-color: rgb(5, 115, 134, 0.4);
   }
   nav .nav-sticky{
-    position: sticky;
+    /* position: sticky; */
     display:flex;
     justify-content: center;
     align-items:center;
@@ -115,11 +115,15 @@
     font-weight: bolder;
     font-size: 30px;
     color:#8E6A6E;
+    padding-top:10px; 
+    padding-bottom: 10px;
   }
   article ul li {
     color:#83785E;
+    padding: 0;
   }
   footer {
-    padding: 10px;
+    padding-top: 0px;
+    color:#83785E;
   }
 
