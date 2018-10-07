@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   
   <title>My Resume</title>
@@ -12,7 +13,6 @@
     <header>
       <div class="name">
         <h1>Laura Lamb</h1>
-        <h2>Future Programmer</h2>
       </div>
     </header>
       <div class="flex-container">
@@ -28,66 +28,45 @@
               <a href="https://www.linkedin.com/in/laura-lamb-b9617a168/" target="_blank"><span class="fab fa-linkedin fa-3x"></span></a>
               <a href="https://www.facebook.com/laurawrrrrrr" target="_blank"><span class="fab fa-facebook fa-3x"></span></a>
           </div> 
-        
+          
       </div>
       <div class="content">
-        <nav>
-          <!-- <ul>
-            <li><a href="#">Work </a></li>
-            <li><a href="#">Education </a></li>
-            <li><a href="#">Portfolio</a></li>
-          </ul> -->
-        <section id="description">
-          <article>
-            <p>I am learning HTML and CSS and hope to be really good at it some day.</p>
-          </article>
-        </section>
-        <aside>
-          <h3>Work Experience</h3>
+                  <section id="description">
+            
+              <p>I am learning HTML and CSS and hope to be really good at it some day. This is where I would write a brief description of what I would like to do with my skills as a career.</p>
+            
+          </section>
+          <nav class="nav-sticky">
+              <a href="#work" class="w3-bar-item w3-button">Work </a>
+              <a href="#education" class="w3-bar-item w3-button">Education </a>
+              <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+            </nav>
+        <article id="experience">
+          <div id="work">Work Experience</div>>
             <ul>
-              <li>Austin Telco FCU</li>
-                <ul>
+              <li class="bold">Austin Telco FCU</li>
                   <li>Head Teller</li>
                   <li>March 2014 - Present</li>
-                </ul>
-                <br>
-              <li>Sprouts Farmers Market</li>
-                <ul>
+                  <li class="bold">Sprouts Farmers Market</li>
                   <li>Scan Coordinator</li>
                   <li>March 2012 - November 2013</li>
-                </ul>
-                <br>
-                <li>Hamlin Pharmacy & Gifts</li>
-                <ul>
+                  <li class="bold">Hamlin Pharmacy & Gifts</li>
                   <li>September 2007 - October 2011</li>
-                </ul>
-              <br>
             </ul>
-
-          <h3>Education</h3>
+          <div id="education">Education</div>
             <ul>
-              <li>Austin Coding Academy</li>
-                <ul>
-                  <li>2018 - 2019</li>
-                </ul>
-              <li>Del Mar College</li>
-                <ul>
-                    <li>2007 - 2011</li>
-                </ul>
-              <li></li>
-              <ul>
-                  <li></li>
-              </ul>
+              <li class="bold">Austin Coding Academy</li>
+              <li>2018 - 2019</li>
+              <li class="bold">Del Mar College</li>
+              <li>2007 - 2011</li>
             </ul>
-          <h3>Portfolio</h3>
+          <div id="portfolio">Portfolio</div>
             <ul>
                 <li>Coming Soon!</li>
                 <li>Coming Soon!</li>
                 <li>Coming Soon!</li>
-              </ul>
-
-        </aside>
-        </nav>
+            </ul>
+        </article>
         <footer>
           I built this webpage
           Call or Email me for info.

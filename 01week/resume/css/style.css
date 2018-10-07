@@ -4,15 +4,12 @@
     background-attachment: fixed;  
     text-align: center;
     font-family: "Oxygen Mono", monospace;
-    position: relative;
+    /* position: relative; */
   }
-  h1{
-    color:rgb(92, 51, 138);
+  header .name h1{
+    color:#8E6A6E;
     font-size: 50px;
-  }
-  h2 {
-    color: rgb(5, 115, 134);
-    font-size: 30px;
+    font-weight: 900;
   }
   .flex-container {
     background-color: rgb(48, 48, 48,0.7);
@@ -32,10 +29,37 @@
     order:1;
   }
   .content{
-    color:rgb(92, 51, 138)
+    color:#282828;
+    font-family: "Oxygen Mono", monospace;
   }
-  description {
-    font-size: 14px;
+  #description {
+    color:#FFFFFF;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+    article {
+    margin: 30px 70px 50px 70px;
+    background-color: rgb(2, 2, 2, 0.7);
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    font-family: "Oxygen Mono", monospace;
+  }
+  article #work {
+    background-color:rgb(5, 115, 134, 0.7);
+    font-weight: 960;
+    color:#282828;
+  }
+  article #education {
+    background-color:rgb(5, 115, 134, 0.7);
+    font-weight: 960;
+    color:#282828;
+  }
+  article #portfolio {
+    background-color:rgb(5, 115, 134, 0.7);
+    font-weight: 960;
+    color:#282828;
   }
   img {
     width:20px;
@@ -74,12 +98,28 @@
     color:#FFFFFF;
   }
   nav {
-    border: plum solid 10px;
-    background-color: rgb(2, 2, 2, 0.7);
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 25px;
+    min-height:30px;
+    color:#282828;
+    font-weight: 900;
+    background-color: rgb(5, 115, 134, 0.4);
+  }
+  nav .nav-sticky{
+    position: sticky;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    justify-content: space-between;
+  }
+    .bold {
+    font-weight: bolder;
+    font-size: 30px;
+    color:#8E6A6E;
+  }
+  article ul li {
+    color:#83785E;
   }
   footer {
     padding: 10px;
   }
+
