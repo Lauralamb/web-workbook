@@ -1,0 +1,129 @@
+  body {
+    background-image: url("http://1-background.com/images/silk/black-silk-repeating-background.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;  
+    text-align: center;
+    font-family: "Oxygen Mono", monospace;
+    /* position: relative; */
+  }
+  header .name h1{
+    color:#8E6A6E;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .flex-container {
+    background-color: rgb(48, 48, 48,0.7);
+    color: rgb(5, 115, 134);
+    opacity: 50%;
+    font-weight:bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 10px 5px 10px rgb(48, 48, 48,0.3);
+  }
+    .image {
+    display: inline-block;
+    flex:1;
+    align-self: auto;
+    order:1;
+  }
+  .content{
+    color:#282828;
+    font-family: "Oxygen Mono", monospace;
+  }
+  #description {
+    color:#FFFFFF;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+    article {
+    margin: 30px 70px 50px 70px;
+    background-color: rgb(2, 2, 2, 0.7);
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    font-family: "Oxygen Mono", monospace;
+  }
+  article #work {
+    background-color:rgb(5, 115, 134, 0.7);
+    font-weight: 960;
+    color:#282828;
+  }
+  article #education {
+    background-color:rgb(5, 115, 134, 0.7);
+    font-weight: 960;
+    color:#282828;
+  }
+  article #portfolio {
+    background-color:rgb(5, 115, 134, 0.7);
+    font-weight: 960;
+    color:#282828;
+  }
+  img {
+    width:20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .selfie{
+    margin-left:100px; 
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+  }
+  li{
+    padding: 15px;
+  }
+  .personal {
+    flex: 1;
+    order:2;
+  }
+  #social {
+    position: relative;
+    margin-right:50px; 
+    flex: 1;
+    align-self: center;
+    order:3;
+  }
+    .fa-linkedin {
+    color:#FFFFFF;   
+  }
+  .fa-facebook {
+    color:#FFFFFF;
+  }
+  nav {
+    min-height:30px;
+    color:#282828;
+    font-weight: 900;
+    background-color: rgb(5, 115, 134, 0.4);
+  }
+  nav .nav-sticky{
+    /* position: sticky; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    justify-content: space-between;
+  }
+    .bold {
+    font-weight: bolder;
+    font-size: 30px;
+    color:#8E6A6E;
+    padding-top:10px; 
+    padding-bottom: 10px;
+  }
+  article ul li {
+    color:#83785E;
+    padding: 0;
+  }
+  footer {
+    padding-top: 0px;
+    color:#83785E;
+  }
+
