@@ -12,9 +12,10 @@ body {
 }   
 /* Global */
 .container {
-    width: 100%;
-    margin:0;
+    height: auto;
+    margin:0 auto;
     overflow:hidden;
+    position: relative;
 }
 ul{
     margin:0;
@@ -62,9 +63,8 @@ header a:hover{
     color:#ccc;
     font-weight: bold;
 }
-
-/* #showcase*/
-/* #showcase{} */
+/* #explorer (section)*/
+/* #explorer{} */
 
 /*window*/
 .main-box {
@@ -81,9 +81,9 @@ header a:hover{
 #rightside{
     float:right;
     width: 40%;
-    margin-right:40px;
-    
-}
+    height: 750px;
+    margin-right:40px; 
+} 
 .box-top {
     font-size:18px;
     text-align: center;
@@ -104,6 +104,9 @@ header a:hover{
     border-right: solid rgb(129, 129, 129) 2px;
     float: left;
 }
+#menu a{
+    text-decoration: none;
+}
 #menu .btn {
     border:none;
     outline:none;
@@ -112,32 +115,41 @@ header a:hover{
     cursor: pointer;
     display: block;
 }
-.active, .btn:hover {
-    color:rgb(160, 9, 9);
+.btn a:hover {
+    color:rgb(52, 160, 9);
 }
-.active, .btn:active{
+.btn a:active{
     background-color:rgb(102, 102, 102);
     color:rgb(160, 9, 9);
     font-weight: bold;
 }
-.box-right {
-    position: relative;
-    width: 75%;
-    height: 98%;
-    float:right;
-    margin-top:5px;    
-    margin-left:40px;
-}
 .week {
-    /* float:left; */
+    float:left;
     padding: 0px;
     display: block;
     margin: 0 auto;
     display: inline-block;
-    width: 30%;
+    width: 25%;
+    margin-right:0;
+    position: relative;
+}
+.week a{
+    text-decoration: none;
+    font-weight: bold;
+    color:blue;
+    background-color:rgba(204, 204, 204, 0.39);
+
 }
 .imgtext {
     text-align: left;
     margin-left:35px;
-    
+}
+/*rightbox*/
+.box-right {
+    position: relative;
+    width: 75%;
+    height: 98%;
+    float:left;
+    margin-top:5px;    
+    margin-left:40px;
 }
