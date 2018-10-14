@@ -1,21 +1,27 @@
 
-/* * {
-    box-sizing: border-box;
-} */
+* {
+    margin:0;
+    padding:0; 
+}
 html{
     background:url("../img/background.jpg"); 
     background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 50% 50%;
+    
 }    
 body {
     text-align: center;
-    font-family: 'Khula', sans-serif;
-    background-color: rgb(0, 0, 0,0.7);
+    font-family: "Bubblegum Sans";
+    background-color: rgba(0, 0, 0, 0.787);
     border-radius: 40px;
-    padding: 20px;
-    margin: 100px;
-    color: rgb(211, 0, 0);
-    font-weight: bolder;
-    font-size: 20px;
+    padding: 2px;
+    margin: 30px;
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    font-size: 18px;
+    font-size-adjust: 0.58;
 }
 header{
     background-color: rgba(0, 0, 0, 0.068);
@@ -24,7 +30,6 @@ header{
     display: inline-block;
     margin-left: 20px;
     width: 500px;
-    
 }
 h1 {
     text-align: center;
@@ -33,16 +38,17 @@ h1 {
     padding: 10px;
     font-size: 50px;
 }
+h2 {
+    color:rgb(189, 10, 10);
+}
 nav {
     text-align: left;
     padding-left: 100px; 
-    clear: both;
 }
 nav p {
     padding-top: 20px;
     margin-top: 10px;
     color: #04dbeb;
-
 }
 hr{
     
@@ -51,8 +57,8 @@ hr{
     box-shadow: inset 0 12px 12px -12px #024b5080;
 }
 .content {
-    padding:5px 200px;
-    margin: 0;
+    padding:5px 20px;
+    margin: 0 1%;
 }
 article {
     text-align: center;
