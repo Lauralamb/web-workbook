@@ -6,7 +6,7 @@
 
 body {
     font-family: "Carter One";
-    background-image: url("/img/bananas.png");
+    background-image: url("img/bananas.png");
     background-repeat: repeat;
     color: rgb(17, 11, 11);
     margin:5em 5em 0 5em;
