@@ -7,7 +7,7 @@
     <title>Laura's Web Workbook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -34,7 +34,7 @@
                                 <div class="box-bar">
                                     <p>This is where the some text would go.</p>
                                 </div>
-                                <div class="box-left">
+                                <div class="navbar">
                                     <div id="menu">
                                         <div class="btn"><a href="welcome.html" target="pageswitch">Welcome</a></div>
                                         <div class="btn active"><a href="welcome.html" target="pageswitch">Weeks</a></div>
@@ -42,8 +42,9 @@
                                         <div class="btn"><a href="https://www.linkedin.com/in/laura-lamb-b9617a168/" target="_blank">LinkedIn</a></div>
                                     </div>
                                 </div>
-                                
-                                <div class="box-right">
+                            <div class="left">
+                                <!--This was the first way I did it... trying drop down menus instead --- 
+                                    <div class="box-left"> 
                                     <div class="week"><a href="https://rawgit.com/Lauralamb/web-workbook/resume/01week/resume/index.html" target="pageswitch"><img src="./img/folder.png"><div class="imgtext">Week 1</div></a></div>
                                     <div class="week"><a href="https://rawgit.com/Lauralamb/web-workbook/bio/02week/bio/index.html" target="pageswitch"><img src="./img/folder.png"><div class="imgtext">Week 2 </div></a></div>
                                     <div class="week"><a href="./03week/" target="pageswitch"><img src="./img/folder.png"><div class="imgtext">Week 3</div></a></div>
@@ -56,8 +57,30 @@
                                     <div class="week"><a href="./10week/" target="pageswitch"><img src="./img/folder.png"><div class="imgtext">Week 10</div></a></div>
                                     <div class="week"><a href="./projects/" target="pageswitch"><img src="./img/folder.png"><div class="imgtext">Projects</div></a></div>
                                     <div class="week"><a href="./sideWork/" target="pageswitch"><img src="./img/folder.png"><div class="imgtext">SideWork </div></a></div>
+                                </div> -->
+                            <div class="dropdown">
+                                <input class="dropbtn" type="image" src="./img/folder.png"><div class="btntxt">Week 1</div></button>
+                                    <div class="dropdown-content">
+                                        <a href="https://rawgit.com/Lauralamb/web-workbook/gh-pages/01week/helloworld/index.html" target="pageswitch">Hello World</a>
+                                        <a href="https://rawgit.com/Lauralamb/web-workbook/resume/01week/resume/index.html" target="pageswitch">Resume</a>
+                                    </div>
+                            </div>
+                            <div class="dropdown">
+                                <input class="dropbtn" type="image" src="./img/folder.png"><div class="btntxt">Week 2</div></button>
+                                    <div class="dropdown-content">
+                                        <a href="https://rawgit.com/Lauralamb/web-workbook/bio/02week/bio/index.html" target="pageswitch">Bio</a>
+                                        <!-- no 2nd project-->
+                                    </div>
                                 </div>
-                            <!-- <div class="clearfix"></div> -->
+                                <div class="dropdown">
+                                        <input class="dropbtn" type="image" src="./img/folder.png"><div class="btntxt">Week 3</div></button>
+                                            <div class="dropdown-content">
+                                                <a href="nothing here yet" target="pageswitch"></a>
+                                                <!-- no 2nd project-->
+                                            </div>
+                                        </div>
+                            </div> <!-- class left end-->
+                            <div class="clearfix"></div>
                         </div>
                         <div class="main-box" id="rightside"> 
                             <div class="box-top">

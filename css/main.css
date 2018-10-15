@@ -7,7 +7,7 @@ body {
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    font: 18px/1.5 'Open Sans', sans-serif;;
 
 }   
 /* Global */
@@ -50,7 +50,8 @@ header #branding {
     float:left;
 }
 header #branding h1 {
-    margin:0;
+    margin:0 0 0 1em;
+    font-size: 50px;
 }
 header nav {
     float:right;
@@ -70,10 +71,10 @@ header a:hover{
 /*window*/
 .main-box {
     height: 750px;
-    width: 50%;
+    width: 40%;
     border: 3px solid black;
     background-color: azure;
-    position: relative;
+    /* position: relative; */
     margin-top: 30px;
     margin-left:40px;
     border-radius: 10px;
@@ -81,7 +82,7 @@ header a:hover{
 }
 #rightside{
     float:right;
-    width: 40%;
+    width: 50%;
     height: 750px;
     margin-right:40px; 
 } 
@@ -98,17 +99,23 @@ header a:hover{
     background-color:rgb(155, 153, 153);
     border-bottom:solid rgb(129, 129, 129) 2px;
 }
-.box-left {
+/*This is the links bar on the left */
+.navbar {
     width: 20%;
     height: 92%;
     background-color:rgb(155, 153, 153);
     border-right: solid rgb(129, 129, 129) 2px;
     float: left;
 }
+#menu {
+    position: relative;
+    z-index: 10; /*this fixed my unclickable links due to the float in navbar*/
+}
 #menu a{
     text-decoration: none;
+    color: #fff;
 }
-#menu .btn {
+#menu .btn a {
     border:none;
     outline:none;
     padding: 10px 16px;
@@ -116,22 +123,88 @@ header a:hover{
     cursor: pointer;
     display: block;
 }
+#menu a:link {
+    color: #000;
+}
+#menu a:visited {
+    color:rgb(85, 69, 69);
+}
 .btn a:hover {
     color:rgb(52, 160, 9);
-}
-.btn a:active{
-    background-color:rgb(102, 102, 102);
-    color:rgb(160, 9, 9);
     font-weight: bold;
+}
+.btn active, a:active{
+    font-weight: bold;
+}
+
+/*lefttbox*/
+.left {
+    position: relative;
+    
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+}
+.btntxt {
+    position: absolute;
+    color:white;
+    background-color: rgb(76, 152, 175);
+    border-radius: 50%;
+    padding: 5px;
+    left: 40px;
+    top:70px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(76, 152, 175);
+    color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+}
+/* .box-left {
+    position: absolute;
+    width: 75%;
+    height: 98%;
+    margin-top:5px;    
+    margin-left:40px;
 }
 .week {
     float:left;
-    padding: 0px;
-    display: block;
-    margin: 0 auto;
-    display: inline-block;
-    width: 25%;
-    margin-right:0;
+    padding-left: 85px;
+    margin:  auto; 
+    width: 33%;
     position: relative;
 }
 .week a{
@@ -139,18 +212,23 @@ header a:hover{
     font-weight: bold;
     color:blue;
     background-color:rgba(204, 204, 204, 0.39);
-
+    border-radius: 50%;
 }
 .imgtext {
     text-align: left;
     margin-left:35px;
+} 
+/* .left {
+    width: %;
+} */
+
+/* These should be at the bottom for responsiveness, doesnt appear to do anything... */
+/* @media(max-width: 600px){
+p{
+    font-size: 1.25rem;
 }
-/*rightbox*/
-.box-right {
-    position: relative;
-    width: 75%;
-    height: 98%;
-    float:left;
-    margin-top:5px;    
-    margin-left:40px;
-}
+@media screen and (max-width: 600px) {
+    .explorer{
+        float: none;
+        width: 100%;
+} */
