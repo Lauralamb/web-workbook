@@ -1,0 +1,81 @@
+
+* {
+    margin:0;
+    padding:0; 
+}
+html{
+    background:url("../img/background.jpg"); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 50% 50%;
+    
+}    
+body {
+    text-align: center;
+    font-family: "Bubblegum Sans";
+    background-color: rgba(0, 0, 0, 0.787);
+    border-radius: 40px;
+    padding: 2px;
+    margin: 30px;
+    color: rgb(230, 230, 230);
+    
+    font-size: 18px;
+    font-size-adjust: 0.58;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 70px;
+    display: block;
+    display: inline-block;
+    margin-left: 20px;
+    width: 500px;
+}
+h1 {
+    text-align: center;
+    color:#04dbeb;
+    margin: 25px;
+    padding: 10px;
+    font-size: 50px;
+}
+h2 {
+    color:rgb(189, 10, 10);
+}
+nav {
+    text-align: left;
+    padding-left: 100px; 
+}
+nav p {
+    padding-top: 20px;
+    margin-top: 10px;
+    color: #04dbeb;
+}
+hr{
+    
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px #024b5080;
+}
+.content {
+    padding:5px 20px;
+    margin: 0 1%;
+}
+article {
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+#github, #linkedin {
+    background-color:rgb(131, 129, 129);
+    border-radius: 12px;
+    padding:2px;
+    }
+img {
+    border-radius: 12px;
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+    color: #0147a1;
+}
