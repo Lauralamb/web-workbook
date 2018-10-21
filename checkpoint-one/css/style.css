@@ -25,7 +25,7 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 @font-face {
-    src: url(/css/fonts/heavitas.woff);
+    src: url(./fonts/heavitas.woff);
     font-family: myfont;
 }
 body {
