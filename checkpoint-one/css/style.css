@@ -1,1 +1,197 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    box-sizing: border-box;
+}
+@font-face {
+    src: url(/css/fonts/heavitas.woff);
+    font-family: myfont;
+}
+body {
+    text-align: center;
+    font-family: myfont;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 50px;
+    letter-spacing: .1em;
+    word-spacing: 100vw;
+    text-align: left;
+    padding-left:200px;
+}
+h3 {
+    font-size: 25px;
+    letter-spacing: .2em;
+    padding-left:100px;
+}
+div {
+    display: block;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.intro {
+    /* height: 100vh;
+    width: 100vw; */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.header-content {
+    flex:1;
+    position: absolute; /*need*/
+    top:50%;
+    left:50%;
+    width: 700px;
+    justify-content: center;
+    margin-left:-350px;
+    margin-top: -20vh;
+}
+p {
+    flex: 1;
+    font-size: 16px;
+    justify-content: center;
+    display:block;
+    /* margin: 10px 10px; */
+}
 
+header {
+    background-color: #F5F0EA;
+    height: 100vh;
+}
+/* chard*/
+
+article {
+    height: 100vh; /*makes color blocks screen size*/
+}
+.chardonnay {
+    background-color: #00B2B0;
+    color: #F9E093;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.chardonnay h3 {
+    color: #00908E;
+}
+.left-side {
+    width: 50%;
+    height: 100vh;
+    flex:1;
+    /* border: 4px solid black; */
+    overflow: hidden;
+}
+img{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 600px;
+    object-fit: cover;
+}
+
+.right-side {
+    flex:1;
+    height: 100vh;
+    /* border: 4px solid black; */
+    
+}
+
+
+.right-content {
+    flex:1;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 700px;
+    justify-content: center;
+    
+}
+/* .can {
+    position: absolute; 
+    flex:1;
+    /* height: 3px; */
+    /* width: 1%;  */
+    /* left: 30%;
+    top:10%; 
+    justify-content: center;
+}  */ */
+.wine-description {
+    word-wrap: break-word;
+    text-align: left;
+    flex:1;
+}
+/*red*/
+.red {
+    background-color: #9B1B20;
+    color: #9CD5C4;
+    height: 100vh;
+    width: 100vw;
+    position: relative;   
+}
+.red h3 {
+    color: #7D1619;
+}
+
+/*rose*/
+.rose {
+    background-color: #243F93;
+    color: #F3896F;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.rose h3 {
+    color: #162559;
+}
+/*blanc*/
+.blanc {
+    background-color: #73A144;
+    color: #C2E8FB;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.blanc h3 {
+    color: #537431;
+}
+/*bubbles*/
+.bubbles {
+    background: -webkit-linear-gradient(#F0A57F,#DFCF6B,#AFD287);
+    color: #1D1E1E;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.bubbles h3 {
+    color: #608880;
+}
