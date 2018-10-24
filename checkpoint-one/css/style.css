@@ -13,7 +13,11 @@
     } */
 body {
     text-align: center;
-    font-family: myfont
+    font-family: myfont;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
 }
 h1 {
     font-size: 70px;
@@ -32,9 +36,29 @@ h3 {
     text-align: left;
     
 }
-/* div {
-    display: block;
-} */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    font-size: 28px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #9B1B20;
+}
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -42,9 +66,22 @@ h3 {
     /* flex-direction: row-reverse; */
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
-
+.imglogo {
+    position: absolute;
+    
+}
+.logo {
+    position: absolute;
+    margin:0 auto;
+    top: -330px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    padding:5px;
+}
 .intro { 
     /* height: 100vh;
     width: 100vw; */
@@ -75,6 +112,16 @@ header {
     background-color: #F5F0EA;
     height: 100vh;
 }
+.smallcans {
+    position: absolute;
+    display:flex;
+    justify-content: space-evenly;
+    top:75%;
+}
+.can {
+    height: 200px;
+    width: 75px;
+}
 /* chard*/
 
 article {
@@ -96,7 +143,7 @@ article {
     flex:1;
     order: 1;
     /* border: 4px solid black; */
-    overflow: hidden;
+    
 }
 img{
     min-width: 100%;
@@ -107,13 +154,30 @@ img{
 }
 
 .right-side {
+    width: 50%;
     flex:1;
-    order: 2;
+    order: 1;
     height: 100vh;
+    position: absolute;
+    right:0;
     /* border: 4px solid black; */
     
 }
+.right-side-2 {
+    width: 50%;
+    flex:1;
+    order: 1;
+    height: 100vh;
+    /* border: 4px solid black; */
+}
 
+.left-content {
+    flex:1;
+    position: absolute;
+    top:50%;
+    right:50%;
+    width: 700px;
+}
 
 .right-content {
     flex:1;
@@ -121,8 +185,6 @@ img{
     top:50%;
     left:50%;
     width: 700px;
-    /* justify-content: center; */
-    
 }
 /* .can {
     position: absolute; 
@@ -138,6 +200,17 @@ img{
     text-align: left;
     flex:1;
 }
+.wine-description-left {
+    word-wrap: break-word;
+    text-align: right;
+    padding-right: 200px;
+    flex:1;
+}
+.h3-left {
+    text-align: right;
+    padding-right: 200px;
+    padding-left:5px;
+}
 /*red*/
 .red {
     background-color: #9B1B20;
@@ -147,7 +220,7 @@ img{
     position: relative;   
 }
 .red h3 {
-    color: #7D1619;
+    color: rgb(119, 24, 27);
 }
 
 /*rose*/
@@ -218,3 +291,56 @@ img{
 /*.right-side:nth-child(1) {
     order: 2;
 } /*This does not work*/
+
+.footer-container {
+    background-color: black;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: inherit;
+    margin: 0 ;
+    padding: 0;
+
+}
+.footer-container ul {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.footer-container li:first-of-type {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+li {
+    line-height: 2em;
+    text-align: left;
+}
+span {
+    color: red;
+}
+input[type="email"] {
+    width: 60%;
+    margin-top: 7px;
+}
+
+.email {
+    font-size: 18px;
+    border: none;
+    
+    
+    
+}
+input[type="submit"] {
+    width: 90px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    margin-top: 10px;
+    padding: 3px;
+    font-size: 18px;
+    border: none;
+    
+}
