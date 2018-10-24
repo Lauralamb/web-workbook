@@ -58,15 +58,22 @@ a:visited {
 a:hover {
     color: #9B1B20;
 }
-
+div {
+    display: block;
+}
 .container {
     height: 100vh;
     width: 100vw;
     display: flex;
-    /* flex-direction: row-reverse; */
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-shrink: inherit;
+    background-image:url("../img/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* flex-direction: column; */
+    /* display: inline-block; */
     
 }
 .imglogo {
@@ -87,23 +94,20 @@ a:hover {
     width: 100vw; */
     min-width: 100%;
     min-height: 100%;
-    width: auto;
+    
+    /* width: auto; */
     object-fit: cover;
 }
 .header-content {
-    flex:1;
     position: absolute; /*need*/
     top:50%;
     left:50%;
     width: 700px;
-    justify-content: center;
     margin-left:-350px;
     margin-top: -20vh;
 }
 p {
-    flex: 1;
     font-size: 16px;
-    justify-content: center;
     display:block;
     margin: 10px 10px;
 }
@@ -112,13 +116,19 @@ header {
     background-color: #F5F0EA;
     height: 100vh;
 }
-.smallcans {
-    position: absolute;
-    display:flex;
-    justify-content: space-evenly;
-    top:75%;
+.wines {
+    padding-top: 670px;
+    padding-right: 1500px;
 }
-.can {
+.smallcans {
+    display:flex;
+    
+    /* position: fixed; */
+    /* margin:400px -2200px; */
+
+
+}
+.cans {
     height: 200px;
     width: 75px;
 }
@@ -140,8 +150,6 @@ article {
 .left-side {
     width: 50%;
     height: 100vh;
-    flex:1;
-    order: 1;
     /* border: 4px solid black; */
     
 }
@@ -155,8 +163,6 @@ img{
 
 .right-side {
     width: 50%;
-    flex:1;
-    order: 1;
     height: 100vh;
     position: absolute;
     right:0;
@@ -165,14 +171,12 @@ img{
 }
 .right-side-2 {
     width: 50%;
-    flex:1;
-    order: 1;
     height: 100vh;
     /* border: 4px solid black; */
 }
 
 .left-content {
-    flex:1;
+
     position: absolute;
     top:50%;
     right:50%;
@@ -180,7 +184,6 @@ img{
 }
 
 .right-content {
-    flex:1;
     position: absolute;
     top:50%;
     left:50%;
@@ -188,23 +191,20 @@ img{
 }
 /* .can {
     position: absolute; 
-    flex:1;
     /* height: 3px; */
     /* width: 1%;  */
     /* left: 30%;
     top:10%; 
     justify-content: center;
-}  */ */
+}  */
 .wine-description {
     word-wrap: break-word;
     text-align: left;
-    flex:1;
 }
 .wine-description-left {
     word-wrap: break-word;
     text-align: right;
     padding-right: 200px;
-    flex:1;
 }
 .h3-left {
     text-align: right;
