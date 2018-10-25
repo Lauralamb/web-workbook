@@ -1,1 +1,347 @@
+ /* * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    } */
+@font-face {
+    src: url(./fonts/heavitas.woff);
+    font-family: myfont;
+}
+/*this hides scroll bars*/
+/* ::-webkit-scrollbar {
+    display: none;
+    } */
+body {
+    text-align: center;
+    font-family: myfont;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 50px;
+    letter-spacing: .1em;
+    word-spacing: 100vw;
+    text-align: left;
+    padding-left:200px;
+}
+h3 {
+    font-size: 22px;
+    letter-spacing: .1em;
+    padding-left:200px;
+    text-align: left;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    font-size: 28px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #9B1B20;
+}
+div {
+    display: block;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: inherit;
+    background-image:url("../img/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* flex-direction: column; */
+    /* display: inline-block; */
+    
+}
+.imglogo {
+    position: absolute;
+    
+}
+.logo {
+    position: absolute;
+    margin:0 auto;
+    top: -330px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    padding:5px;
+}
+.intro { 
+    /* height: 100vh;
+    width: 100vw; */
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* width: auto; */
+    object-fit: cover;
+}
+.header-content {
+    position: absolute; /*need*/
+    top:50%;
+    left:50%;
+    width: 700px;
+    margin-left:-350px;
+    margin-top: -20vh;
+}
+p {
+    font-size: 16px;
+    display:block;
+    margin: 10px 10px;
+}
 
+header {
+    background-color: #F5F0EA;
+    height: 100vh;
+}
+.wines {
+    padding-top: 670px;
+    padding-right: 1500px;
+}
+.smallcans {
+    display:flex;
+    
+    /* position: fixed; */
+    /* margin:400px -2200px; */
+
+
+}
+.cans {
+    height: 200px;
+    width: 75px;
+}
+/* chard*/
+
+article {
+    height: 100vh; /*makes color blocks screen size*/
+}
+.chardonnay {
+    background-color: #00B2B0;
+    color: #F9E093;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.chardonnay h3 {
+    color: #00908E;
+}
+.left-side {
+    width: 50%;
+    height: 100vh;
+    /* border: 4px solid black; */
+    
+}
+img{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 600px;
+    /* object-fit: cover; */
+}
+
+.right-side {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right:0;
+    /* border: 4px solid black; */
+    
+}
+.right-side-2 {
+    width: 50%;
+    height: 100vh;
+    /* border: 4px solid black; */
+}
+
+.left-content {
+
+    position: absolute;
+    top:50%;
+    right:50%;
+    width: 700px;
+}
+
+.right-content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 700px;
+}
+/* .can {
+    position: absolute; 
+    /* height: 3px; */
+    /* width: 1%;  */
+    /* left: 30%;
+    top:10%; 
+    justify-content: center;
+}  */
+.wine-description {
+    word-wrap: break-word;
+    text-align: left;
+}
+.wine-description-left {
+    word-wrap: break-word;
+    text-align: right;
+    padding-right: 200px;
+}
+.h3-left {
+    text-align: right;
+    padding-right: 200px;
+    padding-left:5px;
+}
+/*red*/
+.red {
+    background-color: #9B1B20;
+    color: #9CD5C4;
+    height: 100vh;
+    width: 100vw;
+    position: relative;   
+}
+.red h3 {
+    color: rgb(119, 24, 27);
+}
+
+/*rose*/
+.rose {
+    background-color: #243F93;
+    color: #F3896F;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.rose h3 {
+    color: #162559;
+}
+/*blanc*/
+.blanc {
+    background-color: #73A144;
+    color: #C2E8FB;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.blanc h3 {
+    color: #537431;
+}
+/*bubbles*/
+.bubbles {
+    background: -webkit-linear-gradient(#F0A57F,#DFCF6B,#AFD287);
+    color: #1D1E1E;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.bubbles h3 {
+    color: #608880;
+}
+/*bottom*/
+.container .bottom { 
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+} 
+.cork {
+    position: absolute;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    padding-top: 50px;
+    
+
+}
+.imgfix {
+    position: absolute;
+    padding-bottom: 300px;
+}
+#tab { 
+    object-fit: contain;
+    height: 250px;
+    width: 200px;
+    z-index: 10;
+    padding-bottom: 60px;
+    /* border:5px solid black; */
+}  
+/* .red + .left-side, .blanc + .left-side {
+    order:2;
+}  This does not work*/
+
+/*.right-side:nth-child(1) {
+    order: 2;
+} /*This does not work*/
+
+.footer-container {
+    background-color: black;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: inherit;
+    margin: 0 ;
+    padding: 0;
+
+}
+.footer-container ul {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.footer-container li:first-of-type {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+li {
+    line-height: 2em;
+    text-align: left;
+}
+span {
+    color: red;
+}
+input[type="email"] {
+    width: 60%;
+    margin-top: 7px;
+}
+
+.email {
+    font-size: 18px;
+    border: none;
+    
+    
+    
+}
+input[type="submit"] {
+    width: 90px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    margin-top: 10px;
+    padding: 3px;
+    font-size: 18px;
+    border: none;
+    
+}
