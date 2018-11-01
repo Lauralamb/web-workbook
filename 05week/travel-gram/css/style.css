@@ -1,1 +1,122 @@
+body{
+    background-color: coral;
+    text-align: center;
+    margin: 20px 20px;
+}
+.box {
+    height: 300px;
+    border:1px solid black;
+    display: flex;
+    justify-content: space-around;
 
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10";
+    grid-gap:20px;
+}
+.box1{
+    grid-area:box1;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+
+.box2{
+    grid-area:box2;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.box3{
+    grid-area:box3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height:623px;
+}
+.box4{
+    grid-area:box4;
+    display: grid;
+    grid-template-row: 30% 70%;
+}
+.box5{
+    grid-area:box5;
+    display: grid;
+    grid-template-row: 20% 80%;
+}
+.box6{
+    grid-area:box6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box7{
+    grid-area:box7;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 500px;
+}
+.box8{
+    grid-area:box8;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 500px;
+}
+.box9{
+    grid-area:box9;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 500px;
+}
+.box10{
+    grid-area:box10;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 500px;
+}
+.box:nth-child(odd) {
+    background-color: gray;
+}
+.box:nth-child(even) {
+    background-color: aquamarine;
+}
+.img {
+    padding-top: 25px;
+}
+.info {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+p {
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+        
+}
+.button {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(197, 1, 1);
+    border-radius: 50%;
+}
+
+#date {
+    background-color:lightslategrey;
+    min-height:30px;
+    font-size: 16px;
+    text-align: center;
+}
+.button input:checked~ .
