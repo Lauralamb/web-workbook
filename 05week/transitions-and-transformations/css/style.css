@@ -1,0 +1,58 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.trigger {
+    display:grid;
+    row-gap: 1.3rem;
+    width: 100px;
+}
+.box {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    transition: transform 1.3s ease-in-out;
+}
+.box1 {
+    background-color: gray;
+}
+.box2 {
+    background-color:burlywood;
+}
+.box3 {
+    background-color: yellow;
+}
+.box4 {
+    background-color: green;
+}
+.box5 {
+    background-color: blue;
+}
+.box6 {
+    background-color: purple;
+}
+.box7 {
+    background-color: maroon;
+}
+.box8 {
+    background-color: burlywood;
+}
+.box9 {
+    background-color: pink;
+}
+.box10 {
+    background-color: palevioletred;
+}
+.box11 {
+    background-color: darkmagenta;
+}
+.box12 {
+    background-color: magenta;
+}
+.trigger:hover :nth-child(odd)  {
+    transform: scale(2) translate(400px) rotatez(270deg);
+}
+.trigger:hover :nth-child(even) {
+    transform: scale(.5) translate(-400px) rotatez(-1080deg);
+}
