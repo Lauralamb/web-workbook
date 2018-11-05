@@ -1,19 +1,29 @@
 body{
-    background-color: coral;
+    background-image: url(https://vignette.wikia.nocookie.net/gaia/images/c/c6/Summer2k11_pie-bg.jpg/revision/latest?cb=20111114061910);
+    background-repeat: repeat;
+    background-attachment: fixed;
     text-align: center;
-    margin: 20px 20px;
-}
-.box {
-    height: 300px;
-    border:1px solid black;
-    display: flex;
-    justify-content: space-around;
+    font-size: 15px;
+    line-height: 1rem;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    min-width: 100%;
+    max-width:992px;
+    margin-bottom: 20px;
 
 }
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .container {
+    margin:0 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(300px, auto);
     grid-template-areas:
     "box1 box1 box2 box2"
     "box3 box3 box4 box5"
@@ -21,102 +31,252 @@ body{
     "box7 box8 box9 box10";
     grid-gap:20px;
 }
+.box {
+    height: 290px;
+    border:2px groove rgba(112, 99, 68, 0.603);
+    min-height: 0;
+    min-width: 300px 
+} 
+/*individual boxes */
 .box1{
     grid-area:box1;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    
 }
-
 .box2{
     grid-area:box2;
-    display: grid;
-    grid-template-columns: 30% 70%;
 }
 .box3{
     grid-area:box3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    height:623px;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "img img"
+    "text text";
+    height:627px;
 }
 .box4{
     grid-area:box4;
-    display: grid;
-    grid-template-row: 30% 70%;
 }
 .box5{
     grid-area:box5;
-    display: grid;
-    grid-template-row: 20% 80%;
 }
 .box6{
     grid-area:box6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 .box7{
     grid-area:box7;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    height: 500px;
 }
 .box8{
     grid-area:box8;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    height: 500px;
 }
 .box9{
     grid-area:box9;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    height: 500px;
 }
 .box10{
     grid-area:box10;
-    display: grid;
-    grid-template-rows: 20% 80%;
-    height: 500px;
+} 
+.text {
+    grid-area: text;
 }
+/*groups*/
 .box:nth-child(odd) {
-    background-color: gray;
+    background-color: rgba(230, 189, 132, 0.829);
 }
 .box:nth-child(even) {
-    background-color: aquamarine;
+    background-color: rgba(239, 206, 129, 0.616);
 }
+.box1, .box2, .box6 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "img text"
+    "img .";
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.box4, .box5 {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "img img"
+    "text text";
+    grid-auto-rows: minmax(250px, auto);
+    grid-auto-columns: minmax(120px, auto);
+    justify-items:center;
+    align-content: center;
+    height: 310px;
+    overflow: hidden;
+    min-height: 0;
+    
+}
+
+.box7, .box8, .box9, .box10 {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "img img"
+    "text text";
+    grid-auto-rows: minmax(800px, auto);
+    justify-items:center;
+    height: 450px;
+    overflow: hidden;
+    min-height: 0;
+} 
+/*inside content*/
 .img {
-    padding-top: 25px;
+    width: 300px;
+    height: 200px;
+    grid-area: img;
+    box-shadow: 10px 10px 5px rgba(112, 99, 68, 0.623);
+    border-radius: 8px;
 }
-.info {
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 10px;
-    padding: 20px;
+.grp {
+    margin-left: 30px;
 }
-p {
-    border-bottom: 1px solid black;
-    margin-bottom: 30px;
-    text-align: left;
-    padding: 15px;
-    font-size: 20px;
+.lemon, .lime {
+    height:120px; 
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+.pumpkin {
+    height:300px; 
+    width: 100%;
+    object-fit: fill;
+    margin-left:50%;
+    margin-top: 50px;
+}
+.last {
+    height:200px; 
+    width: 250px;
+    object-fit: fill;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #706344;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+h2 {
+    color: rgb(148, 89, 1);
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-area: h2;
+    text-shadow: 0px -2px 0px #333,
+    0px 2px 3px #666;
+}
+.description {
+    padding-bottom: 15px;
+    min-width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .options {
     display: flex;
-    justify-content: space-around;
-        
+    justify-content: space-evenly;
+    grid-area: options;
 }
 .button {
-    height: 25px;
-    width: 25px;
-    background-color: rgb(197, 1, 1);
-    border-radius: 50%;
+    height: 20px;
+    padding: 2px;
+    width: 150px;
+    background-color: #706344;
+    border-radius: 15px;
+    font-size: 14px;
 }
+.checked {
+    color: orange;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color:rgb(148, 89, 1);
+}
+/*media q*/
 
-#date {
-    background-color:lightslategrey;
-    min-height:30px;
-    font-size: 16px;
-    text-align: center;
-}
-.button input:checked~ .
+/*tablet*/
+@media (min-width: 768px) and (max-width:991px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(200px, auto);
+        grid-template-areas:
+        "box1 box1"
+        "box2 box2"
+        "box3 box3" 
+        "box3 box3" 
+        "box4 box5"
+        "box6 box6"
+        "box7 box8" 
+        "box9 box10";
+        grid-gap:20px;
+    }
+} 
+
+/*phone*/
+@media (max-width:767px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3" 
+        "box4" 
+        "box5"
+        "box6"
+        "box7" 
+        "box8" 
+        "box9"
+        "box10";
+    }
+    .box {
+        height: 400px;
+        font-size: 12px;
+    }
+    .h2 {
+        margin-top: 0px;
+    }
+    .pumpkin,.lime {
+        width: 300px;
+        height: 200px;
+        margin:0;
+    }
+    .pumpkin {
+        margin-top: 50px;
+        margin-left: 150px;
+
+    } 
+    .lime {
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+
+    .lemon {
+        width: 300px;
+        height: 200px;
+        object-fit: fill; 
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+
+    .last {
+        margin-top: 50px;        
+    }
+} 
