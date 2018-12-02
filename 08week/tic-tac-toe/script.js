@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
   }
   })
-//all winning conditions - works!
+//all winning/tie conditions - works!
   function checkForWin(tie){
     if(tie === 9){
       $('#announce-winner').text(`It\'s a Tie, Try Again`);
@@ -56,14 +56,6 @@ $(document).ready(function() {
       $('#announce-winner').text(`${turn} wins`);
     }
   }
-  //tie conditions - figure out how to make a tie and put up in the else statement
-  //if no blank spaces and no winner trigger a tie -  watch the video of class to figure out what else to do
-  // function checkForTie(){
-  //   if ('[data-cell]').text !=''{
-  //     count++;
-  //     $('#announce-winner').text(`It\'s a Tie!`);
-  //   }
-  // }
   //clear button - works!
   $('#clear').click(function(){
     $('[data-cell]').empty();
