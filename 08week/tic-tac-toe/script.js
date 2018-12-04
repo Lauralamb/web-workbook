@@ -5,8 +5,9 @@ $(document).ready(function() {
   //player turns works!
   var turn ='X';
   var count = 0;
+  let gameState = 0;
   $('[data-cell]').on('click', function(){
-    if($(this).text() === ''){
+    if($(this).text() === '' && gameState === 0){
     $(this).text(turn);
     count++;
     checkForWin(count);
@@ -26,34 +27,42 @@ $(document).ready(function() {
     $('[data-cell="1"]').text() === turn &&
     $('[data-cell="2"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="3"]').text() === turn &&
     $('[data-cell="4"]').text() === turn &&
     $('[data-cell="5"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="6"]').text() === turn &&
     $('[data-cell="7"]').text() === turn &&
     $('[data-cell="8"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="2"]').text() === turn &&
     $('[data-cell="4"]').text() === turn &&
     $('[data-cell="6"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="0"]').text() === turn &&
     $('[data-cell="4"]').text() === turn &&
     $('[data-cell="8"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="2"]').text() === turn &&
     $('[data-cell="5"]').text() === turn &&
     $('[data-cell="8"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="0"]').text() === turn &&
     $('[data-cell="3"]').text() === turn &&
     $('[data-cell="6"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }else if($('[data-cell="1"]').text() === turn &&
     $('[data-cell="4"]').text() === turn &&
     $('[data-cell="7"]').text() === turn){
       $('#announce-winner').text(`${turn} wins`);
+      gamestate = 1;
     }
   }
   //clear button - works!
