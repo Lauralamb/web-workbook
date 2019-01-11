@@ -1,0 +1,29 @@
+body {
+    background-color: #313131;
+    color: azure;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 100px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px 0;
+}
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+ul {
+    list-style: none;
+    padding: 20px 0;
+}
+input {
+    margin: 15px 0;
+}
+div > p {
+    padding: 10px;
+    border: 1px solid red;
+}
