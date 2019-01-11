@@ -1,18 +1,48 @@
+* {
+  margin: 0; padding:0;
+}
+body{
+  background-color: #484847;
+  width: 310px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 250px;
+}
+h1{
+  color: #00b2b0;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
 div[data-cell] {
   width: 100px;
   height: 100px;
-  background-color: #f2f2f2;
+  background-color: cornsilk;
   float: left;
-  border: 1px solid #808080;
+  border: 1px solid #00b2b0;
   font-size: 100px;
   text-align: center;
+  
 }
 
 .row {
   clear: both;
+  
 }
 
 #announce-winner {
   clear: both;
   font-size: 50px;
+  color: #00b2b0;
+  font-size: 35px;
+  padding: 5px;
+}
+#clear {
+  margin-top: 5px;
+  float: right;
+  border-radius: 5px;
+  height: 20px;
+  width: 100px;
+  background-color: #00b2b0;
+  color: cornsilk;
+  font-weight: bold;
 }
