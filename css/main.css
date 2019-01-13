@@ -93,9 +93,9 @@ nav > button {
     grid-area: box11;
 }
 
-.class1container,.class2container,.class3container{
+/* .class1container,.class2container,.class3container{
     display: none;
-}
+} */
 .class1Content,.class2Content,.class3Content{
     margin-top: 40px;
     display: grid;
@@ -104,6 +104,9 @@ nav > button {
     "box4 box5 box6"
     "box7 box8 box9"
     "box10 box11 box11";
+}
+.class1Content:hover {
+    background-color: #dfdcd1;
 }
 .work {
     background-color: #dfdcd1;
@@ -126,7 +129,28 @@ nav > button {
 .button.selected {
     color:red;
 }
-
+.week > p{
+    font-size: 24px;
+    margin-left: 15px;
+    text-align: center;
+    color: lightseagreen;
+}
+.week > a:link {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    color: cornflowerblue;
+    
+}
+.week > a:visited{
+    color: #ce2e76;
+} 
+.week > a:hover {
+    background-color: #FAFAFA;
+    padding: 2px;
+    border-radius: 3px;
+    color: cornflowerblue;
+}
 .square > p{
     font-size: 32px;
     text-align: center;
@@ -171,9 +195,9 @@ background-size: 100% 57px;
     background-color: #4848479f;
     cursor: pointer;
 }
-.week1,.week2,.week3,.week4,.week5,.week6,.week7,.week8,.week9,.week10,.week11 {
+/* .week1,.week2,.week3,.week4,.week5,.week6,.week7,.week8,.week9,.week10,.week11 {
     display: none;
-}
+} */
 .display {
     display:block;
     height: 500px;
