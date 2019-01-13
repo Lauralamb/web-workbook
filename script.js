@@ -147,7 +147,7 @@ $class3container.mouseleave(function () {
     });
     
     $box1.mouseleave(function () {
-        $week1.slideUp('slow');
+        $week1.slideUp('fast');
 
     $week2.hide();
 
@@ -156,7 +156,7 @@ $class3container.mouseleave(function () {
         });
         
         $box2.mouseleave(function () {
-            $week2.slideUp('slow');
+            $week2.slideUp('fast');
         });
     $week3.hide();
 
@@ -165,7 +165,7 @@ $class3container.mouseleave(function () {
         });
         
         $box3.mouseleave(function () {
-            $week3.slideUp('slow');
+            $week3.slideUp('fast');
         });
         $week4.hide();
 
@@ -174,7 +174,7 @@ $class3container.mouseleave(function () {
         });
         
         $box4.mouseleave(function () {
-            $week4.slideUp('slow');
+            $week4.slideUp('fast');
         });
         $week5.hide();
 
@@ -183,7 +183,7 @@ $class3container.mouseleave(function () {
         });
         
         $box5.mouseleave(function () {
-            $week5.slideUp('slow');
+            $week5.slideUp('fast');
         });
         $week6.hide();
 
@@ -192,7 +192,7 @@ $class3container.mouseleave(function () {
         });
         
         $box6.mouseleave(function () {
-            $week6.slideUp('slow');
+            $week6.slideUp('fast');
         });
         $week7.hide();
 
@@ -201,7 +201,7 @@ $class3container.mouseleave(function () {
         });
         
         $box7.mouseleave(function () {
-            $week7.slideUp('slow');
+            $week7.slideUp('fast');
         });
         $week8.hide();
 
@@ -210,7 +210,7 @@ $class3container.mouseleave(function () {
         });
         
         $box8.mouseleave(function () {
-            $week8.slideUp('slow');
+            $week8.slideUp('fast');
         });
         $week9.hide();
 
@@ -219,7 +219,7 @@ $class3container.mouseleave(function () {
         });
         
         $box9.mouseleave(function () {
-            $week9.slideUp('slow');
+            $week9.slideUp('fast');
         });
         $week10.hide();
 
@@ -228,7 +228,7 @@ $class3container.mouseleave(function () {
         });
         
         $box10.mouseleave(function () {
-            $week10.slideUp('slow');
+            $week10.slideUp('fast');
         });
         $week11.hide();
 
@@ -237,7 +237,7 @@ $class3container.mouseleave(function () {
         });
         
         $box11.mouseleave(function () {
-            $week11.slideUp('slow');
+            $week11.slideUp('fast');
         });
 
 });

@@ -129,7 +129,28 @@ nav > button {
 .button.selected {
     color:red;
 }
-
+.week > p{
+    font-size: 24px;
+    margin-left: 15px;
+    text-align: center;
+    color: lightseagreen;
+}
+.week > a:link {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    color: cornflowerblue;
+    
+}
+.week > a:visited{
+    color: #ce2e76;
+} 
+.week > a:hover {
+    background-color: #FAFAFA;
+    padding: 2px;
+    border-radius: 3px;
+    color: cornflowerblue;
+}
 .square > p{
     font-size: 32px;
     text-align: center;
